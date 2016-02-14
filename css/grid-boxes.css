@@ -1,0 +1,328 @@
+
+*.grid-box {
+	text-align: center;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	position:relative;
+	float:left;
+	display:inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+*.grid-box * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- HTC One ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- Galaxy S4 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.grid-box {
+  		height:25%;
+  		width: 33.33333%;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+	.grid-box {
+		width: 25%;
+		height:33.33333%;
+	}
+}

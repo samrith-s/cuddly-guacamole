@@ -10,8 +10,15 @@ body, html {
 }
 
 body {
-	position: absolute;
+	position: static;
+	background: #222;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-shadow: 0 2px #111;
 }
+
+*.open-sans { font-family: 'Open Sans Condensed', sans-serif !important; }
+*.londrina { font-family: 'Londrina Solid', cursive !important; }
 
 *.full-width { width: 100%; }
 *.full-height { height: 100%; }
@@ -28,12 +35,123 @@ body {
 *.overflow-x-no-y { overflow-x: auto; overflow-y: hidden; }
 *.overflow-y-no-x { overflow-y: auto; overflow-x: hidden; }
 
-.main-wrapper {
-	position: relative;
+*.ss .title {
+	text-transform: uppercase;
+	text-shadow: 0 2px #111;
+	font-size:2em;
+	line-height:1.1em;
+}
+
+*.ss .header {
+	font-size:1.2em;
+	line-height:1.1em;
+	text-transform: uppercase;
+}
+
+*.ss .para {
+	font-size: 0.7em;
+	line-height:1.2em;
+}
+
+@media only screen 
+  and (max-device-width: 600px)
+  	*.ss .para {
+  		text-shadow:0 1px #111;
+  	}
+}
+
+*.page-loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 10000;
+	background: rgba(1,1,1,0.8);
+	text-align: center;
+	display:none;
+	color: #fff;
+}
+
+.page-loading .holder {
+	width:100%;
+	height:100%;
+	position:relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+
+}
+
+.page-loading .container {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	position:relative;
+}
+
+.page-loading .container .preloader-img {
+	width:100px;
+	height:100px;
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-image: url('../img/loading.gif');
+	margin:5px auto;
+}
+
+.page-loading .message {
+	font-size: 1.5em;
+}
+
+.main-wrapper, .ss {
+	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.ss .grid-row {
-	height: 33.333333%;
+.ss .grid-box .bg-img, .ss .grid-box .text-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	margin: 0;
+}
+
+.ss .grid-box {
+	cursor: pointer;
+	overflow:hidden;
+	opacity:0;
+	display:none;
+}
+.ss .grid-box .bg-img {
+	opacity: 0.2;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);*/
+}
+
+.ss .grid-box .text-container {
+	padding:10px;
+}
+
+/*-------------- RANDOM STUFF ---------*/
+
+.ss .copyinfo {
+	font-size: 0.4em;
+}
+
+@media only screen 
+  and (max-device-width: 600px)
+  	.ss .copyinfo {
+  		text-shadow:0 1px #111;
+  	}
 }
