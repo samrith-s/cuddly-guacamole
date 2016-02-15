@@ -34,6 +34,12 @@ body {
 *.overflow-none { overflow: hidden; }
 *.overflow-x-no-y { overflow-x: auto; overflow-y: hidden; }
 *.overflow-y-no-x { overflow-y: auto; overflow-x: hidden; }
+.landscape .overflow-landscape { overflow:auto; }
+.portrait .overflow-portrait { overflow: auto; }
+
+*.ss a:link, *.ss a:active, *.ss:visited, *.ss a:hover {
+	color: inherit;
+}
 
 *.ss .title {
 	text-transform: uppercase;
@@ -54,7 +60,7 @@ body {
 }
 
 @media only screen 
-  and (max-device-width: 600px)
+  and (max-device-width: 600px) {
   	*.ss .para {
   		text-shadow:0 1px #111;
   	}
@@ -66,7 +72,7 @@ body {
 	left: 0;
 	margin: 0;
 	padding: 0;
-	z-index: 10000;
+	z-index: 1000000;
 	background: rgba(1,1,1,0.8);
 	text-align: center;
 	display:none;
@@ -93,8 +99,8 @@ body {
 }
 
 .page-loading .container .preloader-img {
-	width:100px;
-	height:100px;
+	width:75px;
+	height:75px;
 	background-repeat:no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -143,6 +149,35 @@ body {
 	padding:10px;
 }
 
+.ss .grid-box .overlay {
+	position: absolute;
+	z-index:10;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(1,1,1,0.9);
+	display:none;
+}
+
+.ss .grid-box .overlay .btn {
+	font-size:0.9em;
+	text-shadow: none;
+	font-weight:bold;
+}
+
+.ss .grid-box .overlay .container {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 5px;
+	width:100%;
+	height: 100%;
+}
+
 /*-------------- RANDOM STUFF ---------*/
 
 .ss .copyinfo {
@@ -150,8 +185,54 @@ body {
 }
 
 @media only screen 
-  and (max-device-width: 600px)
+  and (max-device-width: 600px) {
   	.ss .copyinfo {
   		text-shadow:0 1px #111;
   	}
+}
+
+/*----- MODAL ------*/
+
+.cs-modal-container {
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	background: rgba(1,1,1,0.7);
+	z-index: 99999;
+}
+
+.csmc .cs-modal-content {
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.csmc .cs-modal-header {
+	height: 80px;
+}
+.csmc .cs-modal-body {
+	height: calc(100% - 80px);
+	position:relative;
+}
+
+.csmc .close-btn {
+	/*margin-left: 10px;*/
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.csmc .cs-modal-body-content {
+	position: relative;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
 }

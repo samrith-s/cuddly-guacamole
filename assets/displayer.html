@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Samrith Shankar - Displayer</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body onload="setFrame()">
+		
+		<div class="row displayer no-extras" style="height:100%;padding:30px; text-align:center">
+			<div class="inner-wrap full-height full-width" style="text-align:center;">
+				<iframe src="" frameborder="0" id="myFrame" class="full-width full-height" style="margin:auto;"></iframe>
+			</div>
+		</div>
+		<script>
+			function setFrame() {
+				var tmp = location.toString().split("?==");
+				var url = tmp[1],
+					width= tmp[2],
+					height = tmp[3],
+					frame = document.getElementById("myFrame");
+
+				console.log(tmp);
+
+				frame.src = "http://" + url;
+				frame.style.width = width;
+				frame.style.height = height;
+			}
+		</script>
+	</body>
+</html>

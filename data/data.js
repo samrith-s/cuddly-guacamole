@@ -24,7 +24,7 @@ var $BASE_ASSET_URL = "img/";
 
 		grid_data: {
 			1: {
-				
+				// $.get
 			}
 		}
 
