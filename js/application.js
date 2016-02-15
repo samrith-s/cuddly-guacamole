@@ -6,7 +6,8 @@ $(function() {
 	$('body').unbind('contextmenu').on('contextmenu', function(e) {
 		e.preventDefault();
 	}).flowtype({
-		minFont: 14
+		minFont: 14,
+		maxFont: 20
 	});
 
 	if($(window).width()>$(window).height())

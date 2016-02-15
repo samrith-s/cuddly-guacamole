@@ -167,6 +167,7 @@ body {
 	text-shadow: none;
 	font-weight:bold;
 	padding:5px;
+	height: auto;
 }
 
 .ss .grid-box .overlay .container {
