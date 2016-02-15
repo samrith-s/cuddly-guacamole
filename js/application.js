@@ -7,7 +7,7 @@ $(function() {
 		e.preventDefault();
 	}).flowtype({
 		minFont: 14,
-		maxFont: 20
+		maxFont: 34,
 	});
 
 	if($(window).width()>$(window).height())
